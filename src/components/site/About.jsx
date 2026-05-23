@@ -1,11 +1,20 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export const About = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y1 = useTransform(scrollYProgress, [0, 1], ['-8%', '8%']);
   const y2 = useTransform(scrollYProgress, [0, 1], ['10%', '-10%']);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   return (
     <section id="about" ref={ref} className="relative py-32 md:py-40 px-6 md:px-12 lg:px-24" data-testid="about-section">
@@ -62,16 +71,16 @@ export const About = () => {
         </div>
 
         <div className="lg:col-span-7 order-1 lg:order-2 relative h-[480px] md:h-[620px]">
-          <motion.div style={{ y: y1 }} className="absolute top-0 right-0 w-[68%] h-[70%] overflow-hidden rounded-xl">
+          <motion.div style={isMobile ? {} : { y: y1 }} className="absolute top-0 right-0 w-[68%] h-[70%] overflow-hidden rounded-xl">
             <img
-              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjByZXNvcnQlMjBzdW5zZXR8ZW58MHx8fHwxNzc4OTE0MjQ0fDA&ixlib=rb-4.1.0&q=85"
+              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1000"
               alt="Resort poolside"
               className="w-full h-full object-cover"
             />
           </motion.div>
-          <motion.div style={{ y: y2 }} className="absolute bottom-0 left-0 w-[55%] h-[58%] overflow-hidden rounded-xl border border-[#D4AF37]/30">
+          <motion.div style={isMobile ? {} : { y: y2 }} className="absolute bottom-0 left-0 w-[55%] h-[58%] overflow-hidden rounded-xl border border-[#D4AF37]/30">
             <img
-              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MHx8fHwxNzc4OTEwNjU5fDA&ixlib=rb-4.1.0&q=85"
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800"
               alt="Heritage suite interior"
               className="w-full h-full object-cover"
             />

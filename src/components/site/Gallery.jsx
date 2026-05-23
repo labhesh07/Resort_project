@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 
 const images = [
-  { src: 'https://images.unsplash.com/photo-1561501900-3701fa6a0864?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjByZXNvcnQlMjBzdW5zZXR8ZW58MHx8fHwxNzc4OTE0MjQ0fDA&ixlib=rb-4.1.0&q=85', tall: true },
-  { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjByZXNvcnQlMjBzdW5zZXR8ZW58MHx8fHwxNzc4OTE0MjQ0fDA&ixlib=rb-4.1.0&q=85' },
-  { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MHx8fHwxNzc4OTEwNjU5fDA&ixlib=rb-4.1.0&q=85' },
-  { src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?crop=entropy&cs=srgb&fm=jpg', tall: true },
-  { src: 'https://images.unsplash.com/photo-1630587148265-761cbd139043?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MHx8fHwxNzc4OTEwNjU5fDA&ixlib=rb-4.1.0&q=85' },
-  { src: 'https://images.unsplash.com/photo-1728910156510-77488f19b152?crop=entropy&cs=srgb&fm=jpg' },
-  { src: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHx0YWolMjBtYWhhbHxlbnwwfHx8fDE3Nzg5MTQyNDR8MA&ixlib=rb-4.1.0&q=85', tall: true },
-  { src: 'https://images.unsplash.com/photo-1557062975-96113e46608b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxoZXJpdGFnZSUyMHRlbXBsZSUyMGluZGlhfGVufDB8fHx8MTc3ODkxNDI0NHww&ixlib=rb-4.1.0&q=85' },
+  { src: 'https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&q=80&w=800', tall: true },
+  { src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=600' },
+  { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=600' },
+  { src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=800', tall: true },
+  { src: 'https://images.unsplash.com/photo-1630587148265-761cbd139043?auto=format&fit=crop&q=80&w=600' },
+  { src: 'https://images.unsplash.com/photo-1728910156510-77488f19b152?auto=format&fit=crop&q=80&w=600' },
+  { src: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=800', tall: true },
+  { src: 'https://images.unsplash.com/photo-1557062975-96113e46608b?auto=format&fit=crop&q=80&w=600' },
 ];
 
 export const Gallery = () => {

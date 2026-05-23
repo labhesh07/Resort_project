@@ -7,7 +7,7 @@ const rooms = [
     sub: 'क्लासिक',
     price: '₹ 3,200',
     desc: 'A warm, sun-touched room with carved wood detailing and soft ivory linens — ideal for a quiet Agra stopover.',
-    img: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MHx8fHwxNzc4OTEwNjU5fDA&ixlib=rb-4.1.0&q=85',
+    img: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800',
     features: ['Queen Bed', 'AC', 'Wi-Fi', 'Breakfast'],
   },
   {
@@ -15,7 +15,7 @@ const rooms = [
     sub: 'राजसी',
     price: '₹ 5,800',
     desc: 'Higher ceilings, walk-in dressing alcove, and a private balcony overlooking the gardens. The crown of the estate.',
-    img: 'https://images.unsplash.com/photo-1630587148265-761cbd139043?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MHx8fHwxNzc4OTEwNjU5fDA&ixlib=rb-4.1.0&q=85',
+    img: 'https://images.unsplash.com/photo-1630587148265-761cbd139043?auto=format&fit=crop&q=80&w=800',
     features: ['King Bed', 'Balcony', 'Lounge', 'Service'],
   },
   {
@@ -23,7 +23,7 @@ const rooms = [
     sub: 'परिवार',
     price: '₹ 4,500',
     desc: 'A spacious dual-room layout for families on the Agra circuit — kid-friendly amenities and a connecting study.',
-    img: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?crop=entropy&cs=srgb&fm=jpg',
+    img: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=800',
     features: ['2 Rooms', 'Kid-friendly', 'AC', 'Wi-Fi'],
   },
 ];

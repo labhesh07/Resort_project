@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { ArrowDown, MapPin, Star } from 'lucide-react';
 
 export const Hero = () => {
@@ -9,12 +9,21 @@ export const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <section ref={ref} id="hero" className="relative h-[100svh] min-h-[680px] w-full overflow-hidden" data-testid="hero-section">
       {/* Background image with parallax */}
-      <motion.div style={{ y, scale }} className="absolute inset-0">
+      <motion.div style={isMobile ? {} : { y, scale }} className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjByZXNvcnQlMjBzdW5zZXR8ZW58MHx8fHwxNzc4OTE0MjQ0fDA&ixlib=rb-4.1.0&q=85"
+          src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&q=80&w=1600"
           alt="Gunjan Resort cinematic view at sunset"
           className="w-full h-full object-cover"
         />

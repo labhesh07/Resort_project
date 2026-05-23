@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { MapPin } from 'lucide-react';
 
 const data = [
@@ -9,7 +9,7 @@ const data = [
     distance: '83 km',
     drive: '~ 1h 45m drive',
     desc: 'A teardrop of marble on the cheek of time. Plan a sunrise visit — we arrange chauffeur transfers and breakfast on return.',
-    img: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHx0YWolMjBtYWhhbHxlbnwwfHx8fDE3Nzg5MTQyNDR8MA&ixlib=rb-4.1.0&q=85',
+    img: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200',
   },
   {
     title: 'Chandraprabhu Jain Temple',
@@ -17,7 +17,7 @@ const data = [
     distance: '2 km',
     drive: '~ 5 min drive',
     desc: 'A serene Jain pilgrimage just minutes from the resort gates. Soft bells, white domes and the kind of silence only sacred ground holds.',
-    img: 'https://images.unsplash.com/photo-1557062975-96113e46608b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxoZXJpdGFnZSUyMHRlbXBsZSUyMGluZGlhfGVufDB8fHx8MTc3ODkxNDI0NHww&ixlib=rb-4.1.0&q=85',
+    img: 'https://images.unsplash.com/photo-1557062975-96113e46608b?auto=format&fit=crop&q=80&w=1200',
   },
 ];
 
@@ -26,9 +26,18 @@ const Row = ({ item, reverse, index }) => {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], ['-6%', '6%']);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <div ref={ref} className={`grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center ${reverse ? 'lg:[&>div:first-child]:order-2' : ''}`}>
-      <motion.div style={{ y }} className="lg:col-span-7 relative h-[420px] md:h-[560px] overflow-hidden rounded-2xl">
+      <motion.div style={isMobile ? {} : { y }} className="lg:col-span-7 relative h-[420px] md:h-[560px] overflow-hidden rounded-2xl">
         <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F0F]/70 via-transparent to-transparent" />
         <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
