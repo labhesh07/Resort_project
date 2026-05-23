@@ -3438,4 +3438,9 @@ html.lenis, html.lenis body { height: auto; }
   }
 }
 
+/* Z-Index & Stacking Context Overrides to prevent mobile menu from rendering under Hero elements */
+header, [data-testid="site-navbar"], .z-50 {
+  z-index: 99999 !important;
+}
+
 
