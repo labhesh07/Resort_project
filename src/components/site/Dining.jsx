@@ -14,7 +14,7 @@ const menuCategories = [
         price: '₹ 350',
         desc: 'A velvety broth of slow-simmered almond paste and chicken extract, finished with cardamom and a drop of saffron oil.',
         isVeg: false,
-        img: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Tandoori Broccoli',
@@ -23,7 +23,7 @@ const menuCategories = [
         desc: 'Fresh florets marinated in spiced hung yogurt, cream cheese, and green cardamom, grilled golden in our clay oven.',
         isVeg: true,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1624462966581-bc6d768cbce5?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1624462966581-bc6d768cbce5?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Galouti Kebab',
@@ -32,7 +32,7 @@ const menuCategories = [
         desc: 'Melt-in-mouth minced lamb patties infused with 15 royal spices, slow-grilled and served on a mini tawa paratha.',
         isVeg: false,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Paneer Ajwaini Tikka',
@@ -40,7 +40,7 @@ const menuCategories = [
         price: '₹ 450',
         desc: 'Slabs of artisan cottage cheese, marinated in toasted carom seeds and yellow chili paste, charred in the tandoor.',
         isVeg: true,
-        img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=250&q=70',
       }
     ]
   },
@@ -56,7 +56,7 @@ const menuCategories = [
         desc: 'Slow-cooked baby lamb shanks in a rich, deeply aromatic gravy, simmered overnight to falling-off-the-bone tenderness.',
         isVeg: false,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1606471191009-63994c53433b?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1606471191009-63994c53433b?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Paneer Khas Khaas',
@@ -64,7 +64,7 @@ const menuCategories = [
         price: '₹ 580',
         desc: 'Cottage cheese triangles poached in a delicate gravy of white poppy seeds, cashews, and organic vetiver extracts.',
         isVeg: true,
-        img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Jharokha Biryani',
@@ -73,7 +73,7 @@ const menuCategories = [
         desc: 'Kashmiri saffron-infused long grain basmati rice layered with succulent chicken, sealed and dum-cooked under pastry.',
         isVeg: false,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Dal Gunjan',
@@ -82,7 +82,7 @@ const menuCategories = [
         desc: 'Our signature black lentils, slow-simmered for 24 hours on a charcoal fire, enriched with churned butter and fresh cream.',
         isVeg: true,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=250&q=70',
       }
     ]
   },
@@ -98,7 +98,7 @@ const menuCategories = [
         desc: 'Ghee-fried heritage bread soaked in saffron milk syrup, layered with thick rabri, silver leaf, and pistachios.',
         isVeg: true,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Elaneer Payasam',
@@ -106,7 +106,7 @@ const menuCategories = [
         price: '₹ 320',
         desc: 'Tender coconut kernel slivers simmered in cardamom-sweetened coconut milk, served chilled with rose petals.',
         isVeg: true,
-        img: 'https://images.unsplash.com/photo-1601356616077-695728ecf769?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1601356616077-695728ecf769?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Saffron Pistachio Kulfi',
@@ -114,7 +114,7 @@ const menuCategories = [
         price: '₹ 340',
         desc: 'Dense, slow-reduced frozen milk dessert infused with threads of Kashmiri saffron and crushed green pistachios.',
         isVeg: true,
-        img: 'https://images.unsplash.com/photo-1505394033774-4334f2495116?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1505394033774-4334f2495116?auto=format&fit=crop&w=250&q=70',
       }
     ]
   },
@@ -129,7 +129,7 @@ const menuCategories = [
         price: '₹ 250',
         desc: 'Chilled yogurt churned with pure saffron extract, cardamom powder, and garnished with premium slivered almonds.',
         isVeg: true,
-        img: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Rooh Afza Mojito',
@@ -138,7 +138,7 @@ const menuCategories = [
         desc: 'Traditional rose distillate muddled with fresh mint sprigs, lime wedges, organic sugar, and sparkling club soda.',
         isVeg: true,
         isSignature: true,
-        img: 'https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=250&q=70',
       },
       {
         name: 'Cardamom & Ginger Brew',
@@ -146,7 +146,7 @@ const menuCategories = [
         price: '₹ 240',
         desc: 'Chilled herbal infusion of organic ginger juice, green cardamom pods, mint leaves, and a touch of wild honey.',
         isVeg: true,
-        img: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80',
+        img: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=250&q=70',
       }
     ]
   }
