@@ -37,7 +37,7 @@ const Row = ({ item, reverse, index }) => {
         </div>
       </motion.div>
       <div className="lg:col-span-5">
-        <span className="text-xs uppercase tracking-[0.32em] text-[#D4AF37]">0{index + 4} — Nearby</span>
+        <span className="text-xs uppercase tracking-[0.32em] text-[#D4AF37]">0{index + 5} — Nearby</span>
         <h3 className="mt-4 font-serif-display text-3xl md:text-5xl leading-[1.05] tracking-tight text-[#FFFFF0]">
           {item.title}
         </h3>

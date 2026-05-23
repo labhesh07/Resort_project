@@ -17,7 +17,7 @@ export const Gallery = () => {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
           <div>
-            <span className="text-xs uppercase tracking-[0.32em] text-[#D4AF37]">06 — Gallery</span>
+            <span className="text-xs uppercase tracking-[0.32em] text-[#D4AF37]">07 — Gallery</span>
             <h2 className="mt-4 font-serif-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#FFFFF0]">
               Frames of a slow, <em className="text-gold-gradient not-italic">golden</em> stay.
             </h2>

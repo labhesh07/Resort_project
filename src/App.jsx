@@ -7,6 +7,7 @@ import { Hero } from './components/site/Hero';
 import { About } from './components/site/About';
 import { Rooms } from './components/site/Rooms';
 import { Amenities } from './components/site/Amenities';
+import { Dining } from './components/site/Dining';
 import { Attractions } from './components/site/Attractions';
 import { Gallery } from './components/site/Gallery';
 import { Testimonials } from './components/site/Testimonials';
@@ -23,6 +24,7 @@ function ResortHome() {
         <About />
         <Rooms />
         <Amenities />
+        <Dining />
         <Attractions />
         <Gallery />
         <Testimonials />

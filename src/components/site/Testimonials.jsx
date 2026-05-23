@@ -13,7 +13,7 @@ export const Testimonials = () => {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div>
-            <span className="text-xs uppercase tracking-[0.32em] text-[#D4AF37]">07 — Voices</span>
+            <span className="text-xs uppercase tracking-[0.32em] text-[#D4AF37]">08 — Voices</span>
             <h2 className="mt-4 font-serif-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#FFFFF0]">
               Whispers from <em className="text-gold-gradient not-italic">past guests</em>.
             </h2>
